@@ -1,19 +1,19 @@
-package bank;
+package Bank;
 
 public class ValidateAccount {
-    public final String MOBILE = "0904999999";
-    public final String PASS = "dangxuat";
-    public boolean checkAccount( String mobile, String pass){
-        if(mobile.equals(MOBILE)){
-            if(pass.equals(PASS)){
-                System.out.println("dang nhap thanh cong");
+    public final String MOBILE = "0";
+    public final String PASSWORD = "N";
+    public boolean checkAccount(String mobile, String password){
+        if (mobile.equals(MOBILE)){
+            if (password.equals(PASSWORD)){
+                System.out.println("Đăng nhập thành công!");
                 return true;
-            }else {
-                System.out.println("sai mat khau, dang nhap lai i");
+            } else {
+                System.out.println("Mật khẩu sai, vui lòng nhập lại");
                 return false;
             }
-        }else{
-            System.out.println("kiem tra sdt hoac mk");
+        } else {
+            System.out.println("Kiểm tra lại số điện thoại hoặc password");
             return false;
         }
     }
